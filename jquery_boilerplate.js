@@ -10,10 +10,6 @@
 
 				// If the plugin hasn't been initialized yet
 				if ( ! data ) {
-					/*
-						Do more setup stuff here
-					*/
-
 					// Merge default settings with user settings
 					var settings = $.extend(true, {
 						setting: 'setting value'
