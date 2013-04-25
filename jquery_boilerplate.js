@@ -1,5 +1,5 @@
 (function( $ ){
-	var methods = {
+	var public_methods = {
 		// Constructor
 		init : function( options ) {
 			return this.each(function(){
@@ -18,6 +18,9 @@
 					// Change myPlugin to the name of your plugin
 					$(this).data('myPlugin', settings);
 				}
+
+                // Call a private method
+                private_methods.private_method.call($this);
 			});
 		},
 
@@ -37,12 +40,16 @@
 		}
 	};
 
+    var private_methods = {
+        private_method: function() {}
+    };
+
 	// Change myPlugin to the name of your plugin
 	$.fn.myPlugin = function( method ) {
-		if ( methods[method] ) {
-			return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
+		if ( public_methods[method] ) {
+			return public_methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 		} else if ( typeof method === 'object' || ! method ) {
-			return methods.init.apply( this, arguments );
+			return public_methods.init.apply( this, arguments );
 		} else {
 			// Change myPlugin to the name of your plugin
 			$.error( 'Method ' +  method + ' does not exist on jQuery.myPlugin' );
