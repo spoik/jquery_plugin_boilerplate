@@ -16,7 +16,7 @@
 					}, options);
 
 					// Change myPlugin to the name of your plugin
-					$(this).data('myPlugin', settings);
+					$this.data('myPlugin', settings);
 				}
 
                 // Call a private method
