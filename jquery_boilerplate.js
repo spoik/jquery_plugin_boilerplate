@@ -1,5 +1,7 @@
 /*
  * jQuery plugin that 
+ * 
+ * Requires: (dependant javascript files)
  *
  * Date: 
  * Author: 
