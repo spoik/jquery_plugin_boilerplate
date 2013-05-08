@@ -1,3 +1,11 @@
+/*
+ * jQuery plugin that 
+ *
+ * Date: 
+ * Author: 
+ * Written for jQuery Version: 
+ */
+ 
 (function( $ ){
 	var public_methods = {
 		// Constructor
