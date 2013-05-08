@@ -5,7 +5,7 @@
  * Author: 
  * Written for jQuery Version: 
  */
- 
+
 (function( $ ){
 	var public_methods = {
 		// Constructor
@@ -48,6 +48,7 @@
 		}
 	};
 
+	// Private methods
     var private_methods = {
         private_method: function() {}
     };
